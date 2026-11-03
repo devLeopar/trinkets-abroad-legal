@@ -8,7 +8,7 @@ This policy explains what information the Trinkets Abroad game ("the game") uses
 
 - There is no account and no sign-in. We never ask for your name, email address or phone number.
 - We do not run servers for the game. Your progress is saved only on your device.
-- We do not use analytics tools of our own.
+- To improve the game, we collect **anonymous usage data** (which levels you play, win or lose, which features you use, where you tap) with **PostHog**, and **crash reports** with **Sentry**. Both are stored in the European Union, are not linked to you and are never used for advertising. You can turn this off in the game: **Settings › Share anonymous usage data**.
 - The game shows ads from **Google AdMob**. Google receives information from your device to show and measure ads. On iPhone and iPad, Google gets your advertising identifier only if you allow tracking.
 - Purchases are paid through **Apple**. We use **RevenueCat** to check purchases and restore them. RevenueCat receives a record of your purchases and a random identifier, not your name or payment details.
 
@@ -35,6 +35,19 @@ How Google uses this information is described in [Google's Privacy Policy](https
 
 **Removing ads.** The "Remove ads" purchase switches off banners and ads between levels. Rewarded ads stay available, and you only see them when you choose to watch one for a reward.
 
+## Usage data and crash reports (PostHog and Sentry)
+
+We want to know where players get stuck and what goes wrong, so that we can fix it. For that the game sends:
+
+- **Usage data to PostHog** (PostHog Inc., EU region, servers in Frankfurt, Germany): game events such as opening the app, starting, winning, losing or leaving a level, using a booster, opening the shop or a chest, the result of a purchase or an ad, and changing a setting. Each event carries the level number, the bazaar and your device type, iOS version and game version. To see which parts of a scene are hard to find, a sample of your taps (about one in ten) is sent as a position on the screen and in the scene.
+- **Crash reports to Sentry** (Functional Software Inc., EU region, servers in Frankfurt, Germany): when the game crashes or hits an error, a report with the technical details (the error, the steps that led to it, device model, iOS and game version, free memory) and a small share of performance measurements (about one session in ten).
+
+Both use a **random identifier** that the game creates on your device (it is kept in the save file and in Sentry's own files on your device). It is not your advertising identifier, it names no person and it is not shared with other apps. We do not send your name, email, contacts, location, advertising identifier or IP-based location; we ask both services not to keep your IP address. This data is never sold, never used for advertising and never used to track you across other companies' apps or websites.
+
+You can stop it at any time: **Settings › Share anonymous usage data** in the game. When you turn it off, nothing more is sent and events waiting on your device are deleted at once; crash reports stop from the next start of the game.
+
+We keep usage data for up to 12 months and crash reports for up to 90 days. See [PostHog's Privacy Policy](https://posthog.com/privacy) and [Sentry's Privacy Policy](https://sentry.io/privacy/).
+
 ## Purchases (Apple and RevenueCat)
 
 In-app purchases are paid through your Apple account. Apple handles the payment; we never see your card or payment details. Apple's handling of your data is described in [Apple's Privacy Policy](https://www.apple.com/legal/privacy/).
@@ -50,7 +63,7 @@ We do not use this information to track you, and we cannot use it to identify yo
 ## What we do not do
 
 - We do not collect your name, email, contacts, photos, precise location or any health data.
-- We do not use analytics or crash reporting tools of our own. The Unity engine's analytics and crash reporting services are switched off.
+- We do not use analytics or crash reporting tools other than PostHog and Sentry described above. The Unity engine's own analytics and crash reporting services are switched off.
 - We do not sell your personal information. The sharing with Google for advertising is described above, and you can limit it with the choices in that section.
 
 ## Children
@@ -59,7 +72,8 @@ The game is rated 4+ on the App Store, which means its content is suitable for a
 
 ## Keeping and deleting information
 
-- **On your device:** deleting the game deletes its save file and its scheduled notifications. Copies can remain in device backups you made earlier.
+- **On your device:** deleting the game deletes its save file, its waiting usage events and its scheduled notifications. Copies can remain in device backups you made earlier.
+- **At PostHog and Sentry:** usage data is deleted after 12 months, crash reports after 90 days. Because the data is anonymous, we cannot tell which of it is yours unless you send us the identifier; turning the setting off stops new data at once.
 - **At Google:** Google keeps advertising data according to its own policies. You can reset your device's advertising identifier, or keep tracking off, in iOS Settings.
 - **At RevenueCat:** purchase records are kept while they are needed to restore purchases and for legal and tax reasons. Because the record is anonymous, we can only find it if you send us your App Store order ID (from your Apple purchase receipt email). We will then ask RevenueCat to delete it.
 
@@ -67,15 +81,15 @@ The game is rated 4+ on the App Store, which means its content is suitable for a
 
 Depending on where you live (for example in the EEA, the UK or some US states), you may have the right to access, correct or delete personal information about you, to object to or limit its use, to opt out of targeted advertising and to withdraw consent. You can use the in-game **Privacy options** and the iOS **Tracking** setting at any time, or write to us. You also have the right to complain to your local data protection authority.
 
-Where the GDPR applies, the legal bases are: your consent (personalised ads and tracking), our legitimate interest in funding a free game with ads and in preventing fraud (non-personalised ads, fraud checks), and the performance of a contract (delivering and restoring purchases).
+Where the GDPR applies, the legal bases are: your consent (personalised ads and tracking), our legitimate interest in funding a free game with ads, in preventing fraud and in finding and fixing problems in the game (non-personalised ads, fraud checks, anonymous usage data and crash reports, which you can switch off in the game), and the performance of a contract (delivering and restoring purchases).
 
 ## International transfers
 
-Google and RevenueCat are based in the United States and may process information there. They use legal safeguards such as the EU Standard Contractual Clauses or the EU–US Data Privacy Framework.
+Google and RevenueCat are based in the United States and may process information there. PostHog and Sentry store the game's data in the European Union; the companies behind them are based in the United States. They use legal safeguards such as the EU Standard Contractual Clauses or the EU–US Data Privacy Framework.
 
 ## Security
 
-The game sends information only through the Apple, Google and RevenueCat software in it, over encrypted connections (HTTPS). We hold no player data ourselves.
+The game sends information only through the Apple, Google, RevenueCat, PostHog and Sentry software in it, over encrypted connections (HTTPS). We hold no player data ourselves.
 
 ## Changes to this policy
 
