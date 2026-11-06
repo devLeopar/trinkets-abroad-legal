@@ -1,6 +1,6 @@
 # Trinkets Abroad – Privacy Policy
 
-Last updated: 3 November 2026
+Last updated: 6 November 2026
 
 This policy explains what information the Trinkets Abroad game ("the game") uses, who receives it and the choices you have. The game is published by Byte & Rise ("we", "us"). If you have a question, write to us at [contact@byteandrise.com](mailto:contact@byteandrise.com).
 
@@ -39,10 +39,12 @@ How Google uses this information is described in [Google's Privacy Policy](https
 
 We want to know where players get stuck and what goes wrong, so that we can fix it. For that the game sends:
 
-- **Usage data to PostHog** (PostHog Inc., EU region, servers in Frankfurt, Germany): game events such as opening the app, starting, winning, losing or leaving a level, using a booster, opening the shop or a chest, the result of a purchase or an ad, and changing a setting. Each event carries the level number, the bazaar and your device type, iOS version and game version. To see which parts of a scene are hard to find, a sample of your taps (about one in ten) is sent as a position on the screen and in the scene.
+- **Usage data to PostHog** (PostHog Inc., EU region, servers in Frankfurt, Germany): game events such as opening the app, starting, winning, losing or leaving a level, using a booster, opening the shop or a chest, the result of a purchase or an ad (which product and how many coins it gave), and changing a setting. Each event carries the level number, the bazaar, your coin total in the game, and your device type, iOS version and game version and build. To see which parts of a scene are hard to find and which parts of the menus get used, a sample of your taps (about one in ten) is sent: in a level as a position on the screen and in the scene, in the menus as the name of the button. Text is never sent.
 - **Crash reports to Sentry** (Functional Software Inc., EU region, servers in Frankfurt, Germany): when the game crashes or hits an error, a report with the technical details (the error, the steps that led to it, device model, iOS and game version, free memory) and a small share of performance measurements (about one session in ten).
 
-Both use a **random identifier** that the game creates on your device (it is kept in the save file and in Sentry's own files on your device). It is not your advertising identifier, it names no person and it is not shared with other apps. We do not send your name, email, contacts, location, advertising identifier or IP-based location; we ask both services not to keep your IP address. This data is never sold, never used for advertising and never used to track you across other companies' apps or websites.
+**Test versions only.** Versions of the game given out to testers through TestFlight also send every tap and record the game's own screen, about one picture a second, so that we can watch how a test session went. These recordings go to PostHog with the usage data and stop with the same setting. **The version on the App Store never records your screen.**
+
+Both use a **random identifier** that the game creates on your device (it is kept in the save file and in Sentry's own files on your device). Usage data also carries a second random number that is new each time the game starts, so that the events of one session can be told apart. Neither is your advertising identifier, neither names a person and neither is shared with other apps. We do not send your name, email, contacts, location, advertising identifier or IP-based location; we ask both services not to keep your IP address. This data is never sold, never used for advertising and never used to track you across other companies' apps or websites.
 
 You can stop it at any time: **Settings › Share anonymous usage data** in the game. When you turn it off, nothing more is sent and events waiting on your device are deleted at once; crash reports stop from the next start of the game.
 
