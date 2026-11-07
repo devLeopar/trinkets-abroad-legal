@@ -1,6 +1,6 @@
 # Trinkets Abroad – Privacy Policy
 
-Last updated: 6 November 2026
+Last updated: 7 November 2026
 
 This policy explains what information the Trinkets Abroad game ("the game") uses, who receives it and the choices you have. The game is published by Byte & Rise ("we", "us"). If you have a question, write to us at [contact@byteandrise.com](mailto:contact@byteandrise.com).
 
@@ -8,7 +8,7 @@ This policy explains what information the Trinkets Abroad game ("the game") uses
 
 - There is no account and no sign-in. We never ask for your name, email address or phone number.
 - We do not run servers for the game. Your progress is saved only on your device.
-- To improve the game, we collect **anonymous usage data** (which levels you play, win or lose, which features you use, where you tap) with **PostHog**, and **crash reports** with **Sentry**. Both are stored in the European Union, are not linked to you and are never used for advertising. You can turn this off in the game: **Settings › Share anonymous usage data**.
+- To improve the game, and only if you allow it, we collect **anonymous usage data** (which levels you play, win or lose, which features you use, where you tap) with **PostHog**, and **crash reports** with **Sentry**. If you also allow it, the game now and then **records its own screen** while you play. Nothing is sent before you answer. Both services store the data in the European Union, it is not linked to you and it is never used for advertising. You can change your answer at any time in **Settings › Share anonymous usage data** and **Settings › Allow screen recording**.
 - The game shows ads from **Google AdMob**. Google receives information from your device to show and measure ads. On iPhone and iPad, Google gets your advertising identifier only if you allow tracking.
 - Purchases are paid through **Apple**. We use **RevenueCat** to check purchases and restore them. RevenueCat receives a record of your purchases and a random identifier, not your name or payment details.
 
@@ -37,18 +37,22 @@ How Google uses this information is described in [Google's Privacy Policy](https
 
 ## Usage data and crash reports (PostHog and Sentry)
 
-We want to know where players get stuck and what goes wrong, so that we can fix it. For that the game sends:
+We want to know where players get stuck and what goes wrong, so that we can fix it.
+
+**Your choice.** After your first level the game asks whether it may collect anonymous usage data and now and then record the game's screen. Until you answer, nothing is sent: events wait on your device and are deleted if you say no. Saying no changes nothing in the game. You can change your answer at any time in Settings.
+
+If you allow it, the game sends:
 
 - **Usage data to PostHog** (PostHog Inc., EU region, servers in Frankfurt, Germany): game events such as opening the app, starting, winning, losing or leaving a level, using a booster, opening the shop or a chest, the result of a purchase or an ad (which product and how many coins it gave), and changing a setting. Each event carries the level number, the bazaar, your coin total in the game, and your device type, iOS version and game version and build. To see which parts of a scene are hard to find and which parts of the menus get used, a sample of your taps (about one in ten) is sent: in a level as a position on the screen and in the scene, in the menus as the name of the button. Text is never sent.
 - **Crash reports to Sentry** (Functional Software Inc., EU region, servers in Frankfurt, Germany): when the game crashes or hits an error, a report with the technical details (the error, the steps that led to it, device model, iOS and game version, free memory) and a small share of performance measurements (about one session in ten).
 
-**Test versions only.** Versions of the game given out to testers through TestFlight also send every tap and record the game's own screen, about one picture a second, so that we can watch how a test session went. These recordings go to PostHog with the usage data and stop with the same setting. **The version on the App Store never records your screen.**
+**Screen recordings.** If you allowed screen recording, the game sometimes records its own screen while you play (about one picture a second) and sends it to PostHog with the usage data, so that we can see where players get stuck. A recording is made in about one session in five, only on Wi-Fi, and for at most 10 minutes per session. While it records, a red dot and the word "Recording" show at the top of the screen. Only the game's own screen is recorded, with the points where you tap: Apple's purchase sheet, iOS permission prompts and Google's consent form are not part of it, and the game has no text fields, so nothing you type is recorded. To measure whether recording slows the game down, some sessions also send a short summary of frame times. Versions given out to testers through TestFlight send every tap and record every session of a tester who allowed it.
 
 Both use a **random identifier** that the game creates on your device (it is kept in the save file and in Sentry's own files on your device). Usage data also carries a second random number that is new each time the game starts, so that the events of one session can be told apart. Neither is your advertising identifier, neither names a person and neither is shared with other apps. We do not send your name, email, contacts, location, advertising identifier or IP-based location; we ask both services not to keep your IP address. This data is never sold, never used for advertising and never used to track you across other companies' apps or websites.
 
-You can stop it at any time: **Settings › Share anonymous usage data** in the game. When you turn it off, nothing more is sent and events waiting on your device are deleted at once; crash reports stop from the next start of the game.
+You can stop it at any time: **Settings › Share anonymous usage data** stops all usage data, crash reports and screen recordings; **Settings › Allow screen recording** stops only the recordings. When you turn either off, a recording stops at once and pictures not yet sent are deleted; when you turn usage data off, events waiting on your device are deleted too and crash reports stop from the next start of the game.
 
-We keep usage data for up to 12 months and crash reports for up to 90 days. See [PostHog's Privacy Policy](https://posthog.com/privacy) and [Sentry's Privacy Policy](https://sentry.io/privacy/).
+We keep usage data and screen recordings for up to 12 months and crash reports for up to 90 days. See [PostHog's Privacy Policy](https://posthog.com/privacy) and [Sentry's Privacy Policy](https://sentry.io/privacy/).
 
 ## Purchases (Apple and RevenueCat)
 
@@ -75,7 +79,7 @@ The game is rated 4+ on the App Store, which means its content is suitable for a
 ## Keeping and deleting information
 
 - **On your device:** deleting the game deletes its save file, its waiting usage events and its scheduled notifications. Copies can remain in device backups you made earlier.
-- **At PostHog and Sentry:** usage data is deleted after 12 months, crash reports after 90 days. Because the data is anonymous, we cannot tell which of it is yours unless you send us the identifier; turning the setting off stops new data at once.
+- **At PostHog and Sentry:** usage data and screen recordings are deleted after at most 12 months, crash reports after 90 days. Because the data is anonymous, we cannot tell which of it is yours unless you send us the identifier; turning the setting off stops new data at once.
 - **At Google:** Google keeps advertising data according to its own policies. You can reset your device's advertising identifier, or keep tracking off, in iOS Settings.
 - **At RevenueCat:** purchase records are kept while they are needed to restore purchases and for legal and tax reasons. Because the record is anonymous, we can only find it if you send us your App Store order ID (from your Apple purchase receipt email). We will then ask RevenueCat to delete it.
 
@@ -83,7 +87,7 @@ The game is rated 4+ on the App Store, which means its content is suitable for a
 
 Depending on where you live (for example in the EEA, the UK or some US states), you may have the right to access, correct or delete personal information about you, to object to or limit its use, to opt out of targeted advertising and to withdraw consent. You can use the in-game **Privacy options** and the iOS **Tracking** setting at any time, or write to us. You also have the right to complain to your local data protection authority.
 
-Where the GDPR applies, the legal bases are: your consent (personalised ads and tracking), our legitimate interest in funding a free game with ads, in preventing fraud and in finding and fixing problems in the game (non-personalised ads, fraud checks, anonymous usage data and crash reports, which you can switch off in the game), and the performance of a contract (delivering and restoring purchases).
+Where the GDPR applies, the legal bases are: your consent (personalised ads and tracking, anonymous usage data, crash reports and screen recordings, which you can withdraw in the game at any time), our legitimate interest in funding a free game with ads and in preventing fraud (non-personalised ads, fraud checks), and the performance of a contract (delivering and restoring purchases).
 
 ## International transfers
 
