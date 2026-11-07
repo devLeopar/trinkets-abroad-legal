@@ -50,6 +50,7 @@ Yes, the levels work without an internet connection. Ads and purchases need one.
 ## The game crashed or something looks wrong.
 
 Write to us at [contact@byteandrise.com](mailto:contact@byteandrise.com) with:
+- your **Player ID**: in the game, open **Settings**, find **Player ID** under **About** and tap **Copy**, then paste it into your email,
 - your device model and iOS version (Settings › General › About),
 - the game version (bottom of the App Store page, or Settings › General › iPhone Storage › Trinkets Abroad),
 - what you were doing when it happened, and a screenshot if you can.
